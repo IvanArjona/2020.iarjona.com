@@ -1,22 +1,24 @@
 <template>
   <div>
-    <div v-for="(item, i) in items" :key="i" class="card">
-      <img class="logo" v-if="item.logo" :src="item.logo">
-      <div class="content">
-        <span :class="{bold}">
-            {{ item.title }}
-        </span>
-        <div class="secondary" v-if="item.place">
-          <span class="place">{{ item.place }}</span>
-          <span class="date">
-            {{ item.date }}
+    <template v-for="(item, i) in items">
+      <div :key="i" class="card" @click="clickCard(item)" :class="{pointer: item.link}" :title="item.description">
+        <img class="logo" v-if="item.logo" :src="item.logo">
+        <div class="content">
+          <span :class="{bold}">
+              {{ item.title }}
           </span>
-          <span class="grade" v-if="item.grade">
-            Nota media: {{ item.grade }}
-          </span>
+          <div class="secondary" v-if="item.place">
+            <span class="place">{{ item.place }}</span>
+            <span class="date">
+              {{ item.date }}
+            </span>
+            <span class="grade" v-if="item.grade">
+              Nota: {{ item.grade }}/10
+            </span>
+          </div>
         </div>
       </div>
-    </div>
+      </template>
   </div>
 </template>
 
@@ -27,8 +29,15 @@ export default {
   props: {
     items: Array,
     bold: {
-        type: Boolean,
-        default: true,
+      type: Boolean,
+      default: true,
+    }
+  },
+  methods: {
+    clickCard(card) {
+      if (card.link) {
+        location.href = card.link;
+      }
     }
   }
 }
@@ -62,5 +71,8 @@ export default {
   & > * {
     flex-basis: auto;
   }
+}
+.pointer {
+  cursor: pointer;
 }
 </style>

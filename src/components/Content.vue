@@ -12,6 +12,7 @@
 
 <script>
 import Education from './Education';
+import Experience from './Experience';
 
 export default {
   name: 'Content',
@@ -22,7 +23,7 @@ export default {
         { name: 'Experiencia', component: 'Experience' },
         { name: 'Aptitudes', component: 'Skills' },
       ],
-      selected: 'Education',
+      selected: 'Experience',
     }
   },
   methods: {
@@ -31,7 +32,8 @@ export default {
     }
   },
   components: {
-    Education
+    Education,
+    Experience
   }
 }
 </script>

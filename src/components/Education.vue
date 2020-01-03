@@ -43,9 +43,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.section-title {
-  margin: .5rem;
-}
-</style>

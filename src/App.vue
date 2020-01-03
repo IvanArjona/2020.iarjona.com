@@ -44,4 +44,7 @@ body {
 .bold {
   font-weight: bold;
 }
+.section-title {
+  margin: .5rem;
+}
 </style>
