@@ -1,21 +1,21 @@
 <template>
   <main class="main">
     <Profile class="profile"/>
-    <Info class="info"/>
+    <Content class="content"/>
     <Footer class="footer"/>
   </main>
 </template>
 
 <script>
 import Profile from './Profile';
-import Info from './Info';
+import Content from './Content';
 import Footer from './Footer';
 
 export default {
   name: 'Card',
   components: {
     Profile,
-    Info,
+    Content,
     Footer
   }
 }
@@ -34,7 +34,7 @@ export default {
   grid-column: 1;
   padding: 30px;
 }
-.info {
+.content {
   grid-column: 2 / 4;
   padding: 30px;
 }
