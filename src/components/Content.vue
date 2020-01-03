@@ -3,7 +3,8 @@
     <component v-if="selected" :is="selected"/>
     <div class="menu">
       <button class="menu-item" v-for="(menuItem, i) in menu"
-          :key="i" @click="showComponent(menuItem.component)">
+          :key="i" @click="showComponent(menuItem.component)"
+          :class="{selected: selected === menuItem.component}">
         {{ menuItem.name }}
       </button>
     </div>
@@ -50,7 +51,18 @@ export default {
   cursor: pointer;
   font-weight: bold;
 }
+.selected {
+  background: #009688;
+  color: #e7fefc;
+  border-color: #009688;
+}
 .menu-item:hover {
   background: #e7fefc;
+  &.selected {
+    background: #3ac3b6;
+  }
 }
+// .menu-item:hover.selected {
+//   background: red;
+// }
 </style>
