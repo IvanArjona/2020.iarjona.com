@@ -41,4 +41,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+.bold {
+  font-weight: bold;
+}
 </style>
