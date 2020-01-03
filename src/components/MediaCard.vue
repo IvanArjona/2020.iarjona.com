@@ -51,6 +51,9 @@ export default {
   display: flex;
   margin: 5px;
 }
+.card:hover {
+  background: #e7fefc;
+}
 .logo {
   width: 64px;
   height: 64px;

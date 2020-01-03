@@ -50,4 +50,7 @@ export default {
   cursor: pointer;
   font-weight: bold;
 }
+.menu-item:hover {
+  background: #e7fefc;
+}
 </style>
