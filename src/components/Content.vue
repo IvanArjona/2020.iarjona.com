@@ -3,7 +3,7 @@
     <component v-if="selected" :is="selected"/>
     <div class="menu">
       <button class="menu-item" v-for="(menuItem, i) in menu"
-          :key="i" @click="showComponent(menuItem.component)"
+          :key="i" @mousedown="showComponent(menuItem.component)"
           :class="{selected: selected === menuItem.component}">
         {{ menuItem.name }}
       </button>

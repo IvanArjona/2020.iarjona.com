@@ -1,7 +1,7 @@
 <template>
   <div>
     <template v-for="(item, i) in items">
-      <div :key="i" class="card" @click="clickCard(item)" :class="{pointer: item.link}" :title="item.description">
+      <div :key="i" class="card" @mousedown="clickCard(item)" :class="{pointer: item.link}" :title="item.description">
         <img class="logo" v-if="item.logo" :src="item.logo">
         <div class="content">
           <span :class="{bold}">
@@ -36,7 +36,7 @@ export default {
   methods: {
     clickCard(card) {
       if (card.link) {
-        location.href = card.link;
+        open(card.link, '_blank');
       }
     }
   }
