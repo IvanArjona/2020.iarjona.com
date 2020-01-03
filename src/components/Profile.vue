@@ -7,14 +7,15 @@
 </template>
 
 <script>
+import { config } from '../data';
 
 export default {
   name: 'Profile',
   data() {
     return {
-      name: 'Iván Arjona',
-      longName: 'Iván Arjona Alonso',
-      title: 'Full-Stack Web Developer'
+      name: config.name,
+      longName: config.longName,
+      title: config.title
     }
   }
 }

@@ -6,19 +6,13 @@
 
 <script>
 import FooterIcon from './FooterIcon';
+import { socials } from '../data';
 
 export default {
   name: 'Footer',
   data() {
     return {
-      socials: [
-        { name: 'LinkedIn', icon: ['fab', 'linkedin-in'], href: 'https://www.linkedin.com/in/ivan-arjona/' },
-        { name: 'GitHub', icon: ['fab', 'github'], href: 'https://github.com/IvanArjona' },
-        { name: 'GitLab', icon: ['fab', 'gitlab'], href: 'https://gitlab.com/Ivanyn' },
-        { name: 'Facebook', icon: ['fab', 'facebook'], href: 'https://www.facebook.com/Ivanyn' },
-        { name: 'Telegram', icon: ['fab', 'telegram-plane'], href: 'https://t.me/Ivanyn' },
-        { name: 'Email', icon: ['fa', 'envelope'], href: 'mailto:ivanarjonaalonso@gmail.com' },
-      ]
+      socials: socials
     }
   },
   components: {
