@@ -1,7 +1,8 @@
 <template>
   <div>
     <template v-for="(item, i) in items">
-      <div :key="i" class="card" @mousedown="clickCard(item)" :class="{pointer: item.link}" :title="item.description">
+      <component :key="i" :is="item.link ? 'a' : 'div'"
+          :href="item.link" target="_blank" class="card" :title="item.description" :rel="item.rel">
         <img class="logo" v-if="item.logo" :src="item.logo">
         <div class="content">
           <span :class="{bold}">
@@ -17,7 +18,7 @@
             </span>
           </div>
         </div>
-      </div>
+      </component>
       </template>
   </div>
 </template>
@@ -51,6 +52,10 @@ export default {
   display: flex;
   margin: 5px;
 }
+a.card:link, a.card:visited {
+  color: inherit;
+  text-decoration: none;
+}
 .card:hover {
   background: #e7fefc;
 }
@@ -74,8 +79,5 @@ export default {
   & > * {
     flex-basis: auto;
   }
-}
-.pointer {
-  cursor: pointer;
 }
 </style>

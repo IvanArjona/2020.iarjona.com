@@ -36,7 +36,8 @@ export const jobs = [
     place: 'Softeca',
     date: '01/2019 - Actualidad',
     logo: require('./assets/softeca.svg'),
-    link: 'http://www.softeca.es/'
+    link: 'http://www.softeca.es/',
+    rel: 'nofollow'
   }
 ];
 

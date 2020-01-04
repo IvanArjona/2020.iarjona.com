@@ -1,5 +1,5 @@
 <template>
-  <a :href="social.href" target="_blank">
+  <a :href="social.href" target="_blank" rel="me">
     <div class="icon-cnt" :title="social.name">
       <font-awesome-icon class="icon" :icon="social.icon" :label="social.name" />
     </div>
