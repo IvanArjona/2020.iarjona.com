@@ -1,7 +1,7 @@
 <template>
   <section class="profile">
-    <img class="photo" :alt="longName" src="https://place-hold.it/200">
     <h1 class="name">{{ name }}</h1>
+    <img class="photo" :alt="longName" src="https://place-hold.it/200">
     <h2 class="title">{{ title }}</h2>
   </section>
 </template>
@@ -37,8 +37,18 @@ export default {
 .name {
   font-size: 36px;
   color: #009688;
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px rgba(0, 0, 0, .2);
+  letter-spacing: 1px;
 }
 .title {
-    font-size: 18px;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 </style>

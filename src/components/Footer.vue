@@ -23,7 +23,6 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-  margin-top: 8px;
   background-color: #009688;
   display: flex;
   justify-content: center;

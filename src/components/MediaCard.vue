@@ -2,8 +2,11 @@
   <div>
     <template v-for="(item, i) in items">
       <component :key="i" :is="item.link ? 'a' : 'div'"
-          :href="item.link" target="_blank" class="card" :title="item.description" :rel="item.rel">
-        <img class="logo" v-if="item.logo" :src="item.logo">
+          :href="item.link" target="_blank" class="card"
+          :title="item.description" :rel="item.rel">
+        <div class="logo" v-if="item.logo">
+          <img v-if="item.logo" :src="item.logo">
+        </div>
         <div class="content">
           <span :class="{bold}">
               {{ item.title }}
@@ -60,10 +63,15 @@ a.card:link, a.card:visited {
   background: #e7fefc;
 }
 .logo {
-  width: 64px;
-  height: 64px;
   flex-basis: auto;
-  margin: 2px;
+  margin: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & > img {
+    width: 60px;
+    height: 60px;
+  }
 }
 .content {
   margin: 6px;

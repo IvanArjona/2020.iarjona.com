@@ -25,7 +25,7 @@ export default {
         { name: 'Experiencia', component: 'Experience' },
         { name: 'Aptitudes', component: 'Skills' },
       ],
-      selected: 'Skills',
+      selected: 'Education',
     }
   },
   methods: {
@@ -49,7 +49,13 @@ export default {
 .shown {
   flex: 1;
 }
+@media (min-width: 650px) {
+  .shown {
+    min-height: 380px;
+  }
+}
 .menu {
+  margin-top: .5rem;
   flex-shrink: 1;
 }
 .menu-item {

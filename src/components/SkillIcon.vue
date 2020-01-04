@@ -17,6 +17,10 @@ export default {
 .icon {
   height: 32px;
   margin: 5px;
+  @media (min-width: 765px) {
+    height: 36px;
+    margin: 6px;
+  }
 }
 .icon:hover {
   transition: transform 1s;
