@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <component v-if="selected" :is="selected"/>
+  <section class="content">
+    <component class="shown" v-if="selected" :is="selected"/>
     <div class="menu">
       <button class="menu-item" v-for="(menuItem, i) in menu"
           :key="i" @mousedown="showComponent(menuItem.component)"
@@ -14,6 +14,7 @@
 <script>
 import Education from './Education';
 import Experience from './Experience';
+import Skills from './Skills';
 
 export default {
   name: 'Content',
@@ -24,7 +25,7 @@ export default {
         { name: 'Experiencia', component: 'Experience' },
         { name: 'Aptitudes', component: 'Skills' },
       ],
-      selected: 'Experience',
+      selected: 'Skills',
     }
   },
   methods: {
@@ -34,12 +35,23 @@ export default {
   },
   components: {
     Education,
-    Experience
+    Experience,
+    Skills
   }
 }
 </script>
 
 <style lang="scss" scoped>
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.shown {
+  flex: 1;
+}
+.menu {
+  flex-shrink: 1;
+}
 .menu-item {
   color: #009688;
   padding: .4rem;
@@ -62,7 +74,4 @@ export default {
     background: #3ac3b6;
   }
 }
-// .menu-item:hover.selected {
-//   background: red;
-// }
 </style>

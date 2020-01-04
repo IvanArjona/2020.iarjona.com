@@ -68,6 +68,148 @@ export const projects = [
   },
 ];
 
+export const skills = [
+  {
+    group: 'Front-end',
+    skills: [
+      {
+        name: 'JavaScript',
+        icon: require('./assets/skills/javascript.svg')
+      },
+      {
+        name: 'TypeScript',
+        icon: require('./assets/skills/typescript.svg'),
+        link: 'https://www.typescriptlang.org/'
+      },
+      {
+        name: 'Vue.js',
+        icon: require('./assets/skills/vue.svg'),
+        link: 'https://vuejs.org/'
+      },
+      {
+        name: 'Angular',
+        icon: require('./assets/skills/angular.svg'),
+        link: 'https://angular.io/'
+      },
+      {
+        name: 'jQuery',
+        icon: require('./assets/skills/jquery.svg'),
+        link: 'https://jquery.com/'
+      },
+      {
+        name: 'Sass',
+        icon: require('./assets/skills/sass.svg'),
+        link: 'https://sass-lang.com/'
+      },
+      {
+        name: 'Bootstrap',
+        icon: require('./assets/skills/bootstrap.svg'),
+        link: 'https://getbootstrap.com/'
+      },
+      {
+        name: 'Foundation',
+        icon: require('./assets/skills/foundation.svg'),
+        link: 'https://foundation.zurb.com/'
+      },
+      {
+        name: 'Webpack',
+        icon: require('./assets/skills/webpack.svg'),
+        link: 'https://webpack.js.org/'
+      },
+    ]
+  },
+  {
+    group: 'Back-end',
+    skills: [
+      {
+        name: 'Python',
+        icon: require('./assets/skills/python.svg'),
+        link: 'https://www.python.org/'
+      },
+      {
+        name: 'php',
+        icon: require('./assets/skills/php.svg'),
+        link: 'https://www.php.net/'
+      },
+      {
+        name: 'Java',
+        icon: require('./assets/skills/java.svg'),
+        link: 'https://www.java.com/'
+      },
+      {
+        name: 'Laravel',
+        icon: require('./assets/skills/laravel.svg'),
+        link: 'https://laravel.com/'
+      },
+      {
+        name: 'Flask',
+        icon: require('./assets/skills/flask.svg'),
+        link: 'https://www.palletsprojects.com/p/flask/'
+      },
+      {
+        name: 'MongoDB',
+        icon: require('./assets/skills/mongodb.svg'),
+        link: 'https://www.mongodb.com/'
+      },
+      {
+        name: 'MySQL',
+        icon: require('./assets/skills/mysql.svg'),
+        link: 'https://www.mysql.com/'
+      },
+      {
+        name: 'Docker',
+        icon: require('./assets/skills/docker.svg'),
+        link: 'https://www.docker.com/'
+      },
+    ]
+  },
+  {
+    group: 'Big Data & Machine Learning',
+    skills: [
+      {
+        name: 'Apache Spark',
+        icon: require('./assets/skills/spark.svg'),
+        link: 'https://spark.apache.org/'
+      },
+      {
+        name: 'Keras',
+        icon: require('./assets/skills/keras.svg'),
+        link: 'https://keras.io/'
+      },
+      {
+        name: 'Scikit-learn',
+        icon: require('./assets/skills/scikit-learn.svg'),
+        link: 'https://scikit-learn.org/'
+      },
+      {
+        name: 'Apache Hive',
+        icon: require('./assets/skills/hive.svg'),
+        link: 'https://hive.apache.org/'
+      },
+      {
+        name: 'Splunk',
+        icon: require('./assets/skills/splunk.svg'),
+        link: 'https://www.splunk.com/'
+      },
+      {
+        name: 'Power BI',
+        icon: require('./assets/skills/powerbi.svg'),
+        link: 'https://powerbi.microsoft.com/'
+      },
+      {
+        name: 'NumPy',
+        icon: require('./assets/skills/numpy.svg'),
+        link: 'https://numpy.org/'
+      },
+      {
+        name: 'SciPy',
+        icon: require('./assets/skills/scipy.svg'),
+        link: 'https://www.scipy.org/'
+      },
+    ]
+  }
+];
+
 export const socials = [
   { name: 'LinkedIn', icon: ['fab', 'linkedin-in'], href: 'https://www.linkedin.com/in/ivan-arjona/' },
   { name: 'GitHub', icon: ['fab', 'github'], href: 'https://github.com/IvanArjona' },
