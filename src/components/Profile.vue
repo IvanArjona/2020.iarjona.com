@@ -23,6 +23,7 @@ export default {
 
 <style lang="scss" scoped>
 .profile {
+  font-family: 'Dosis', 'Avenir', Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
