@@ -1,7 +1,7 @@
 <template>
   <section class="profile">
     <h1 class="name">{{ name }}</h1>
-    <img class="photo" :alt="longName" src="https://place-hold.it/200">
+    <img class="photo" :alt="longName" src="../assets/photo.svg">
     <h2 class="title">{{ title }}</h2>
   </section>
 </template>
