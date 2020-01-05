@@ -6,6 +6,9 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn, faGithub, faGitlab, faFacebook, faTelegramPlane } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
+const Modernizr = require('./vendor/modernizr-custom');
+Modernizr.webp;
+
 library.add(faLinkedinIn, faGithub, faGitlab, faFacebook, faTelegramPlane, faEnvelope);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 

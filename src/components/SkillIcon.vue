@@ -1,6 +1,10 @@
 <template>
   <a :href="skill.link" target="_blank" :title="skill.name">
-    <img class="icon" :src="skill.icon" :alt="skill.name">
+    <!-- <img class="icon" :src="skill.icon" :alt="skill.name"> -->
+    <picture class="icon">
+      <source :srcset="skill.iconWebp" type="image/webp">
+      <img class="icon" :src="skill.icon" :alt="skill.name">
+    </picture>
   </a>
 </template>
 

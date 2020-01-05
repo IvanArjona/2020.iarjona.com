@@ -10,6 +10,7 @@ export const education = [
     place: 'Universidad de Burgos',
     date: '2018 - 2019',
     logo: require('./assets/ubu.png'),
+    logoWebp: require('./assets/ubu.webp'),
     grade: 8.5,
     link: 'https://www.ubu.es/master-universitario-online-en-inteligencia-de-negocio-y-big-data-en-entornos-seguros-business-intelligence-and-big-data-cyber-secure-environments-interuniversitario'
   },
@@ -18,6 +19,7 @@ export const education = [
     place: 'Universidad de Burgos',
     date: '2014 - 2018',
     logo: require('./assets/ubu.png'),
+    logoWebp: require('./assets/ubu.webp'),
     grade: 8.5,
     link: 'https://www.ubu.es/grado-en-ingenieria-informatica'
   }
@@ -47,6 +49,7 @@ export const projects = [
     place: 'Universidad de Burgos',
     date: '04/2019 - 07/2019',
     logo: require('./assets/ubu.png'),
+    logoWebp: require('./assets/ubu.webp'),
     grade: '9',
     description: 'Análisis de datos sobre presupuestos de reformas de construcción con el objetivo de limpiar, preparar, visualizar y construir un modelo de regresión que prediga los precios de estos presupuestos utilizando librerías como scikit-learn y pandas.'
   },
@@ -64,6 +67,7 @@ export const projects = [
     place: 'XVIII Conferencia de la Asociación Española para la Inteligencia Artificial',
     date: '2018',
     logo: require('./assets/caepia.png'),
+    logoWebp: require('./assets/caepia.webp'),
     link: 'https://sci2s.ugr.es/caepia18/proceedings/docs/CAEPIA2018_paper_214.pdf'
   },
 ];

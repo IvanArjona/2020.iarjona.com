@@ -20,7 +20,7 @@ html {
   height: 100%;
 }
 body {
-  background-color: black;
+  background-color: white;
   background-image: url("./assets/background.png");
   background-attachment: fixed;
   background-position: center;
@@ -28,6 +28,12 @@ body {
 	background-size: cover;
   height: 100%;
   margin: 0;
+}
+.no-webp body {
+  background-image: url("./assets/background.png");
+}
+.no-webp body {
+  background-image: url("./assets/background.png");
 }
 #app {
   font-family: 'Nunito', 'Avenir', Helvetica, Arial, sans-serif;

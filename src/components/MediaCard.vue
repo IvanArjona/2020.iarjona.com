@@ -4,9 +4,10 @@
       <component :key="i" :is="item.link ? 'a' : 'div'"
           :href="item.link" target="_blank" class="card"
           :title="item.description" :rel="item.rel">
-        <div class="logo" v-if="item.logo">
-          <img v-if="item.logo" :src="item.logo">
-        </div>
+        <picture class="logo" v-if="item.logo">
+          <source v-if="item.logoWebp" :srcset="item.logoWebp" type="image/webp">
+          <img :src="item.logo" :alt="item.logo">
+        </picture>
         <div class="content">
           <span :class="{bold}">
               {{ item.title }}
