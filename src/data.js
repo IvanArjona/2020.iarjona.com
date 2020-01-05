@@ -37,7 +37,7 @@ export const jobs = [
     title: 'Full-Stack Web Developer',
     place: 'Softeca',
     date: '01/2019 - Actualidad',
-    logo: require('./assets/softeca.svg'),
+    logo: require('./assets/softeca.svg?data'),
     link: 'http://www.softeca.es/',
     rel: 'nofollow'
   }
@@ -57,7 +57,7 @@ export const projects = [
     title: 'TFG Datos públicos',
     place: 'Universidad de Burgos',
     date: '02/2018 - 06/2019',
-    logo: require('./assets/github.svg'),
+    logo: require('./assets/github.svg?data'),
     grade: '9.5',
     link: 'https://github.com/IvanArjona/TFG-Datos-publicos',
     description: 'Aplicación Web para la recopilación, tratamiento y visualización de datos públicos. Proyecto de fin de grado con calificación de 9.5/10.'
@@ -78,46 +78,46 @@ export const skills = [
     skills: [
       {
         name: 'JavaScript',
-        icon: require('./assets/skills/javascript.svg')
+        icon: require('./assets/skills/javascript.svg?data')
       },
       {
         name: 'TypeScript',
-        icon: require('./assets/skills/typescript.svg'),
+        icon: require('./assets/skills/typescript.svg?data'),
         link: 'https://www.typescriptlang.org/'
       },
       {
         name: 'Vue.js',
-        icon: require('./assets/skills/vue.svg'),
+        icon: require('./assets/skills/vue.svg?data'),
         link: 'https://vuejs.org/'
       },
       {
         name: 'Angular',
-        icon: require('./assets/skills/angular.svg'),
+        icon: require('./assets/skills/angular.svg?data'),
         link: 'https://angular.io/'
       },
       {
         name: 'jQuery',
-        icon: require('./assets/skills/jquery.svg'),
+        icon: require('./assets/skills/jquery.svg?data'),
         link: 'https://jquery.com/'
       },
       {
         name: 'Sass',
-        icon: require('./assets/skills/sass.svg'),
+        icon: require('./assets/skills/sass.svg?data'),
         link: 'https://sass-lang.com/'
       },
       {
         name: 'Bootstrap',
-        icon: require('./assets/skills/bootstrap.svg'),
+        icon: require('./assets/skills/bootstrap.svg?data'),
         link: 'https://getbootstrap.com/'
       },
       {
         name: 'Foundation',
-        icon: require('./assets/skills/foundation.svg'),
+        icon: require('./assets/skills/foundation.svg?data'),
         link: 'https://foundation.zurb.com/'
       },
       {
         name: 'Webpack',
-        icon: require('./assets/skills/webpack.svg'),
+        icon: require('./assets/skills/webpack.svg?data'),
         link: 'https://webpack.js.org/'
       },
     ]
@@ -127,42 +127,42 @@ export const skills = [
     skills: [
       {
         name: 'Python',
-        icon: require('./assets/skills/python.svg'),
+        icon: require('./assets/skills/python.svg?data'),
         link: 'https://www.python.org/'
       },
       {
         name: 'php',
-        icon: require('./assets/skills/php.svg'),
+        icon: require('./assets/skills/php.svg?data'),
         link: 'https://www.php.net/'
       },
       {
         name: 'Java',
-        icon: require('./assets/skills/java.svg'),
+        icon: require('./assets/skills/java.svg?data'),
         link: 'https://www.java.com/'
       },
       {
         name: 'Laravel',
-        icon: require('./assets/skills/laravel.svg'),
+        icon: require('./assets/skills/laravel.svg?data'),
         link: 'https://laravel.com/'
       },
       {
         name: 'Flask',
-        icon: require('./assets/skills/flask.svg'),
+        icon: require('./assets/skills/flask.svg?data'),
         link: 'https://www.palletsprojects.com/p/flask/'
       },
       {
         name: 'MongoDB',
-        icon: require('./assets/skills/mongodb.svg'),
+        icon: require('./assets/skills/mongodb.svg?data'),
         link: 'https://www.mongodb.com/'
       },
       {
         name: 'MySQL',
-        icon: require('./assets/skills/mysql.svg'),
+        icon: require('./assets/skills/mysql.svg?data'),
         link: 'https://www.mysql.com/'
       },
       {
         name: 'Docker',
-        icon: require('./assets/skills/docker.svg'),
+        icon: require('./assets/skills/docker.svg?data'),
         link: 'https://www.docker.com/'
       },
     ]
@@ -172,42 +172,42 @@ export const skills = [
     skills: [
       {
         name: 'Apache Spark',
-        icon: require('./assets/skills/spark.svg'),
+        icon: require('./assets/skills/spark.svg?data'),
         link: 'https://spark.apache.org/'
       },
       {
         name: 'Keras',
-        icon: require('./assets/skills/keras.svg'),
+        icon: require('./assets/skills/keras.svg?data'),
         link: 'https://keras.io/'
       },
       {
         name: 'Scikit-learn',
-        icon: require('./assets/skills/scikit-learn.svg'),
+        icon: require('./assets/skills/scikit-learn.svg?data'),
         link: 'https://scikit-learn.org/'
       },
       {
         name: 'Apache Hive',
-        icon: require('./assets/skills/hive.svg'),
+        icon: require('./assets/skills/hive.svg?data'),
         link: 'https://hive.apache.org/'
       },
       {
         name: 'Splunk',
-        icon: require('./assets/skills/splunk.svg'),
+        icon: require('./assets/skills/splunk.svg?data'),
         link: 'https://www.splunk.com/'
       },
       {
         name: 'Power BI',
-        icon: require('./assets/skills/powerbi.svg'),
+        icon: require('./assets/skills/powerbi.svg?data'),
         link: 'https://powerbi.microsoft.com/'
       },
       {
         name: 'NumPy',
-        icon: require('./assets/skills/numpy.svg'),
+        icon: require('./assets/skills/numpy.svg?data'),
         link: 'https://numpy.org/'
       },
       {
         name: 'SciPy',
-        icon: require('./assets/skills/scipy.svg'),
+        icon: require('./assets/skills/scipy.svg?data'),
         link: 'https://www.scipy.org/'
       },
     ]
