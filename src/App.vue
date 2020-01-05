@@ -21,16 +21,13 @@ html {
 }
 body {
   background-color: white;
-  background-image: url("./assets/background.png");
+  background-image: url("./assets/background.webp");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
 	background-size: cover;
   height: 100%;
   margin: 0;
-}
-.no-webp body {
-  background-image: url("./assets/background.png");
 }
 .no-webp body {
   background-image: url("./assets/background.png");
