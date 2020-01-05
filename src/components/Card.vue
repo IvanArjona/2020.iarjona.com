@@ -22,12 +22,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@keyframes slideIn {
+@keyframes scaleIn {
   0% {
-    transform: translateY(200%);
+    transform-origin: top right;
+    transform: scale(0, 1);
   }
   100% {
-    transform: translateX(0);
+    transform: scale(1, 1);
   }
 }
 .main {
@@ -37,7 +38,7 @@ export default {
   background-color: white;
   margin: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .2);
-  animation: 1.5s ease-out 0s 1 slideIn;
+  animation: 1s ease-out 0s 1 scaleIn;
 }
 .profile {
   grid-column: 1;
