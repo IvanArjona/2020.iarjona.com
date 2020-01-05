@@ -1,6 +1,8 @@
 <template>
   <section class="content">
-    <component class="shown" v-if="selected" :is="selected"/>
+    <transition name="component-fade" mode="out-in">
+      <component class="shown" v-if="selected" :is="selected"/>
+    </transition>
     <div class="menu">
       <button class="menu-item" v-for="(menuItem, i) in menu"
           :key="i" @mousedown="showComponent(menuItem.component)"
@@ -79,5 +81,11 @@ export default {
   &.selected {
     background: #3ac3b6;
   }
+}
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity .3s ease;
+}
+.component-fade-enter, .component-fade-leave-to {
+  opacity: 0;
 }
 </style>
