@@ -22,15 +22,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@keyframes scaleIn {
-  0% {
-    transform-origin: top right;
-    transform: scale(0, 1);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
 .main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -38,7 +29,6 @@ export default {
   background-color: white;
   margin: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .2);
-  animation: 1s ease-out 0s 1 scaleIn;
 }
 .profile {
   grid-column: 1;
