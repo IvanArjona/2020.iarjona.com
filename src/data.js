@@ -1,7 +1,10 @@
 export const config = {
   name: 'Iván Arjona',
   longName: 'Iván Arjona Alonso',
-  title: 'Full-Stack Web Developer'
+  titles: [
+    'Software Engineer',
+    'Full-Stack Web Developer'
+  ]
 };
 
 export const education = [

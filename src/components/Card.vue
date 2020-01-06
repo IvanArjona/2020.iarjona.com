@@ -45,7 +45,6 @@ export default {
 }
 @media (max-width: 650px) {
   .main {
-    margin-top: 175px;
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
     & > * {

@@ -26,8 +26,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 	background-size: cover;
-  height: 100%;
   margin: 0;
+  @media (min-width: 650px) and (min-height: 600px) {
+    height: 100%;
+  }
 }
 .no-webp body {
   background-image: url("./assets/background.png");

@@ -2,7 +2,9 @@
   <section class="profile">
     <h1 class="name">{{ name }}</h1>
     <img class="photo" :alt="longName" src="../assets/photo.svg">
-    <h2 class="title">{{ title }}</h2>
+    <h2 class="title" v-for="(title, i) in titles" :key="i">
+      {{ title }}
+    </h2>
   </section>
 </template>
 
@@ -15,7 +17,7 @@ export default {
     return {
       name: config.name,
       longName: config.longName,
-      title: config.title
+      titles: config.titles
     }
   }
 }
@@ -28,6 +30,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 0;
 }
 .photo {
   height: 200px;
@@ -51,5 +54,10 @@ export default {
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+@media (max-width: 650px) {
+  .profile {
+    padding-bottom: 0 !important;
+  }
 }
 </style>
