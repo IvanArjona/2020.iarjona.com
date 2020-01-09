@@ -119,9 +119,9 @@ export const skills = [
         link: 'https://foundation.zurb.com/'
       },
       {
-        name: 'Webpack',
-        icon: require('./assets/skills/webpack.svg?data'),
-        link: 'https://webpack.js.org/'
+        name: 'Ionic',
+        icon: require('./assets/skills/ionic.svg?data'),
+        link: 'https://ionicframework.com/'
       },
     ]
   },
