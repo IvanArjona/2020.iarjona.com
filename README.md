@@ -1,4 +1,7 @@
-# iarjona.com
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bd457e60-4345-47ec-8be7-a322d594a0ac/deploy-status)](https://app.netlify.com/sites/ivanarjona/deploys)
+
+
+# [iarjona.com](https://iarjona.com)
 
 ## Project setup
 ```
@@ -14,11 +17,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
