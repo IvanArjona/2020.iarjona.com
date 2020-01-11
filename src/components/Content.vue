@@ -1,45 +1,29 @@
 <template>
   <section class="content">
     <transition name="component-fade" mode="out-in">
-      <component class="shown" v-if="selected" :is="selected"/>
+      <router-view class="view"></router-view>
     </transition>
     <div class="menu">
-      <button class="menu-item" v-for="(menuItem, i) in menu"
-          :key="i" @mousedown="showComponent(menuItem.component)"
-          :class="{selected: selected === menuItem.component}">
+      <router-link tag="button" v-for="(menuItem, i) in menu"
+          :key="i" :to="menuItem.route" class="menu-item">
         {{ menuItem.name }}
-      </button>
+      </router-link>
     </div>
   </section>
 </template>
 
 <script>
-import Education from './Education';
-import Experience from './Experience';
-import Skills from './Skills';
-
 export default {
   name: 'Content',
   data() {
     return {
       menu: [
-        { name: 'Educación', component: 'Education' },
-        { name: 'Experiencia', component: 'Experience' },
-        { name: 'Aptitudes', component: 'Skills' },
+        { name: 'Educación', route: 'education' },
+        { name: 'Experiencia', route: 'experience' },
+        { name: 'Aptitudes', route: 'skills' },
       ],
-      selected: 'Education',
     }
   },
-  methods: {
-    showComponent(component) {
-      this.selected = component;
-    }
-  },
-  components: {
-    Education,
-    Experience,
-    Skills
-  }
 }
 </script>
 
@@ -48,11 +32,11 @@ export default {
   display: flex;
   flex-direction: column;
 }
-.shown {
+.view {
   flex: 1;
 }
 @media (min-width: 650px) {
-  .shown {
+  .view {
     min-height: 380px;
   }
 }
@@ -71,14 +55,14 @@ export default {
   cursor: pointer;
   font-weight: bold;
 }
-.selected {
+.router-link-active {
   background: #009688;
   color: #e7fefc;
   border-color: #009688;
 }
 .menu-item:hover {
   background: #e7fefc;
-  &.selected {
+  &.router-link-active {
     background: #3ac3b6;
   }
 }
