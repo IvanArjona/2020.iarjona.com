@@ -1,7 +1,10 @@
 <template>
   <section class="profile">
     <h1 class="name">{{ name }}</h1>
-    <img class="photo" :alt="longName" src="../assets/photo.svg">
+    <picture>
+      <source srcset="../assets/photo.webp" type="image/webp">
+      <img src="../assets/photo.png" :alt="longName" class="photo">
+    </picture>
     <h2 class="title" v-for="(title, i) in titles" :key="i">
       {{ title }}
     </h2>
