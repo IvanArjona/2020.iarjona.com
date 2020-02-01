@@ -5,7 +5,8 @@
     </transition>
     <div class="menu">
       <router-link tag="button" v-for="(menuItem, i) in menu"
-          :key="i" :to="menuItem.route" class="menu-item">
+          :key="i" :to="menuItem.route" class="menu-item"
+          :class="{ 'router-link-active': menuItem.route === 'education' && $router.currentRoute.path === '/' }">
         {{ menuItem.name }}
       </router-link>
     </div>
