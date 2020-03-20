@@ -37,9 +37,18 @@ export const courses = [
 
 export const jobs = [
   {
-    title: 'Full-Stack Web Developer',
+    title: 'Full-Stack Software Engineer',
+    place: 'QDQ media',
+    date: '03/2020 - Actualidad',
+    logo: require('./assets/qdqmedia.png'),
+    logoWebp: require('./assets/qdqmedia.webp'),
+    link: 'https://www.qdqmedia.com/',
+    rel: 'nofollow'
+  },
+  {
+    title: 'Full-Stack Software Engineer',
     place: 'Softeca',
-    date: '01/2019 - Actualidad',
+    date: '01/2019 - 01/2020',
     logo: require('./assets/softeca.svg?data'),
     link: 'http://www.softeca.es/',
     rel: 'nofollow'
@@ -147,6 +156,11 @@ export const skills = [
         name: 'Laravel',
         icon: require('./assets/skills/laravel.svg?data'),
         link: 'https://laravel.com/'
+      },
+      {
+        name: 'Django',
+        icon: require('./assets/skills/django.svg?data'),
+        link: 'https://www.palletsprojects.com/p/flask/'
       },
       {
         name: 'Flask',
